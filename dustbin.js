@@ -19,6 +19,7 @@ class dustbin
 		World.add(world, this.bottomBody)
 		World.add(world, this.leftWallBody)
 		World.add(world, this.rightWallBody);
+		this.image=loadImage("dustbingreen.png");
 
 	}
 	display()
@@ -60,6 +61,7 @@ class dustbin
 			fill("green")
 			rect(0,0,this.dustbinWidth, this.wallThickness);
 			pop()
+			image(this.image,posBottom.x-110 ,posBottom.y-180,this.dustbinWidth, this.dustbinHeight)
 			
 	}
 
